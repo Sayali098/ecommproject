@@ -1,0 +1,123 @@
+/* .shop-category {} */
+.shopCategory-banner {
+
+    display: block;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.shopcategory-indexSort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0px 170px;
+}
+
+.shop-category img {
+    width: 80%;
+    /* height:auto; */
+    object-fit: cover;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+
+}
+
+.shopcategory-Products {
+    /* width: 80%; */
+    margin: 20px 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    row-gap: 80px;
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    border-radius: 75px;
+    width: 233px;
+    height: 69px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+@media(max-width:1280px) {
+    .shopCategory-banner {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .shopcategory-indexSort {
+        width: 80%;
+        margin: auto;
+    }
+
+    .shopcategory-sort {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    .shopcategory-indexSort p {
+        font-size: 13px;
+    }
+
+    .shopcategory-Products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .shopcategory-Products .item{
+        margin: auto;
+    }
+    .shopcategory-loadmore{
+        margin: 100px auto;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    }
+
+}
+
+
+@media(max-width:800px) {
+    .shopCategory-banner {
+        width: 95%;
+    }
+     .shopcategory-Products{
+        width: 95%;
+     }
+    .shopcategory-loadmore{
+        margin: 60px auto;
+    font-size: 13px;
+    width: 150px;
+    height: 40px;
+    }
+
+}
+
+
+
+@media(max-width:500px) {
+   
+     .shopcategory-Products{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+     }
+     .shopcategory-Products img{
+        width: 170px;
+     }
+}
